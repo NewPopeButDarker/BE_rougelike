@@ -50,3 +50,16 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+#Vim files
+*~
+*.swp
+*.swo
+
+#Ignore build output directories
+build/
+bin/
+
+#VSCode
+.vscode/
+*.code-workspace
