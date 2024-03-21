@@ -1,4 +1,14 @@
-IF NOT EXIST "build/" mkdir build
+@echo off
 
+IF NOT EXIST "build/" (
+  mkdir build
+  echo Created ./build/ directory.
+  echo:
+)
+
+echo Generating build system files.
 cmake . -Bbuild/ -G "MinGW Makefiles"
+echo:
+
+echo Building project.
 cmake --build ./build
