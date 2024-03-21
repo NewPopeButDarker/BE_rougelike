@@ -56,6 +56,9 @@ dkms.conf
 *.swp
 *.swo
 
+#clangd config
+compile_flags.txt
+
 #Ignore build output directories
 build/
 bin/
