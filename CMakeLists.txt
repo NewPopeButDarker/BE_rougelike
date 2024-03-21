@@ -10,7 +10,10 @@ find_package(OpenGL REQUIRED)
 add_subdirectory(external/glad)
 
 include_directories(${OPENGL_INCLUDE_DIR}
-                    external/glad/include)
+                    external/glad/include
+                    external/cglm/include
+                    external/stb
+                    external/pico_headers)
 
 add_executable(game WIN32 src/main.c)
 
