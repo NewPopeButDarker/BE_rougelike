@@ -10,6 +10,6 @@ Or if you want to do it manualy you can do it like this (while in project direct
 ```bat
 $ mkdir build
 $ cd .\build\
-$ cmake .
-$ cmake --build 
+$ cmake ..
+$ cmake --build . 
 ```
